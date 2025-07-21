@@ -1,0 +1,34 @@
+{
+    "name": "goose",
+    "description": "goose-lety",
+    "version": "27.06",
+    "manifest_version": 3,
+    "web_accessible_resources": [
+        {
+            "resources": [
+                "goose-honk.wav",
+                "goose1_run.png",
+                "goose2_run.png",
+                "goose1_stop.png",
+                "goose2_stop.png"
+            ],
+            "matches": [
+                "*://*/*"
+            ]
+        }
+    ],
+    "content_scripts": [
+        {
+            "matches": [
+                "*://*/*"
+            ],
+            "js": [
+                "thief_goose.js",
+                "popup.js"
+            ],
+            "css": [
+                "my-styles.css"
+            ]
+        }
+    ]
+}

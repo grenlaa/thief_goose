@@ -1,0 +1,35 @@
+.thief_goose_tr {
+
+    z-index: 99999;
+    position: fixed ;
+    transition: all 1s linear;
+    transform-origin: center;
+}
+
+
+.transition_move_thief_goose {
+    z-index: 99990;
+    transition: all 1s linear;
+}
+
+.thief_goose {
+    height: 80px;
+    width: 80px;
+
+    top: -40px;
+    left: -40px;
+
+    position: absolute;
+    /* display: none; */
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.thief_goose_step {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #fff200;
+}
