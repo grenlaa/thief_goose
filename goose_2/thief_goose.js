@@ -278,19 +278,7 @@ class thief_goose_ {
 
     add_event_mousedown() {
         this.main_div.addEventListener("mousedown", this.thief_gose_mousedown.bind(this))
-        loadScript('https://cdnjs.cloudflare.com/ajax/libs/lodash.js/3.2.0/lodash.js', script => {
-            alert(`Здорово, скрипт ${script.src} загрузился`);
-    alert(_); // функция, объявленная в загруженном скрипте
-          });
     }
-
-
-    loadScript(src, callback) {
-        let script = document.createElement('script');
-        script.src = src;
-        script.onload = () => callback(script);
-        document.head.append(script);
-    }
-
+ 
  
 }
